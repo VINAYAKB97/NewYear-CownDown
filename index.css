@@ -1,0 +1,51 @@
+body{
+    background-image: url(/pexels-eberhard-grossgasteiger-1367192.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#heading{
+    text-decoration: underline burlywood;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    color: white;
+    text-transform: capitalize;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+    height: 200px;
+    padding: 0px 30px;
+    background-color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-family: 'Courier New';
+}
+.time{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 7rem;
+    border-radius: 5px;
+}
+#days,#hours,#minutes,#seconds{
+    font-size: 25px;
+}
+
+
+@media screen and (max-width:800px) {
+    .container{
+        flex-direction: column;
+        height: 80%;
+        width: 40%;
+        padding: 20px 10px;
+
+    }
+}
